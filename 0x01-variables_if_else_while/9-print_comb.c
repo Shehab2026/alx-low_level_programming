@@ -1,22 +1,24 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  *
- * Return: Always 0 (success)
+ * Return: Always 0 (Succes)
  */
+
 int main(void)
 {
-	int a;
-	for (a = 0; a < 10; a++)
+	int n;
+
+	for (n = 0 ; n < 10 ; n++)
 	{
-		putchar (a + '0');
-		if (a < 9)
+		putchar(n + '0');
+		if (n < 9)
 		{
 			putchar(',');
-			putchar(' ');
+			putchar(32);
 		}
 	}
-	putchar('/n');
-       return (0);
-
+	putchar('\n');
+	return (0);
 }
